@@ -1,5 +1,4 @@
-import { BetterSignalConnectionType } from "./BetterSignalConnection";
-import BetterSignalConnection from "./BetterSignalConnection";
+import BetterSignalConnection, { BetterSignalConnectionType } from "./BetterSignalConnection";
 
 export interface BetterSignalType {
     Connect?: Callback,
