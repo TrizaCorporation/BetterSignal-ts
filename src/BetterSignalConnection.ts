@@ -3,7 +3,7 @@ export interface BetterSignalConnectionType {
     Disconnect?: Callback
   }
   
-  export default class BetterSignalConnection {
+export default class BetterSignalConnection {
     Callback?: Callback
     constructor(Callback: Callback){
       this.Callback = Callback
