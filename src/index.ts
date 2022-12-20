@@ -1,6 +1,4 @@
-import { BetterSignalConnectionType } from "./BetterSignalConnection";
-import BetterSignalConnection from "./BetterSignalConnection";
-import BetterSignal from "./BetterSignal";
-import { BetterSignalType } from "./BetterSignal";
+import BetterSignalConnection, { BetterSignalConnectionType } from "./BetterSignalConnection";
+import BetterSignal, { BetterSignalType } from "./BetterSignal";
 
 export {BetterSignal, BetterSignalType, BetterSignalConnection, BetterSignalConnectionType}
