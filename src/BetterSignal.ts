@@ -2,7 +2,7 @@ import BetterSignalConnection, { BetterSignalConnectionType } from "./BetterSign
 
 export interface BetterSignalType {
     Connect?: Callback,
-    Fire: Callback,
+    Fire(...args: unknown[]): Callback,
     Connections: BetterSignalConnectionType[]
 }
   
@@ -19,7 +19,7 @@ export default class BetterSignal {
         return Connection
     }
 
-    Fire(...args: []){
+    Fire(...args: unknown[]) {
         for(const Connection of this.Connections){
             if (Connection.Callback){
                 task.spawn(Connection.Callback, ...args)

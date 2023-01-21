@@ -1,6 +1,6 @@
 export interface BetterSignalConnectionType {
     Callback?: Callback,
-    Disconnect?: Callback
+    Disconnect?(): void
   }
   
 export default class BetterSignalConnection {
