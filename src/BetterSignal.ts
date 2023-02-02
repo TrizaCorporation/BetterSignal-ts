@@ -1,9 +1,10 @@
 import BetterSignalConnection, { BetterSignalConnectionType } from "./BetterSignalConnection";
 
 export interface BetterSignalType {
-    Connect?: Callback,
-    Fire(...args: unknown[]): Callback,
-    Connections: BetterSignalConnectionType[]
+    Connect?(Callback: Callback): BetterSignalConnection,
+    Fire?(...args: unknown[]): Callback,
+    Connections: BetterSignalConnectionType[],
+    Wait?(): typeof coroutine.yield,
 }
   
 
